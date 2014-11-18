@@ -5,3 +5,27 @@ https://github.com/zha8035/xinlijiankang_zengsixing_group_chapter1.git
 
 服务器是linux
 192.185.2.37   dewei   abcd1234!UESTC
+We have investigated the error message that you submitted and we feel that there's no reason to worry about it. You see, Django is already installed on the server, so you don't need to reinstall it. Instead, please move to the next section of the Support Portal article at http://support.hostgator.com/articles/specialized-help/technical/django-with-fastcgi, "Setting up Django Projects".
+
+You should have no problem moving forward from this point. If you have any other questions or concerns, please inform us so that we can help you to achieve your hosting goals.
+
+python2.7 下面 django1.4也是装好的。
+
+Hello,
+
+Thank you for choosing HostGator. The server does have python2.7, but you must invoke it by name, like this: python2.7 -c "import django; print(django.get_version())"
+
+Using python2.7 you can use version 1.4 of Django, which is installed on the server, or y ou may install your own virtual environment to install version 1.7. Please note that we will be unable to assist you with the installation or troubleshooting of Django 1.7. I was., however, able to find you an environmental configuration guide: http://docs.python-guide.org/en/latest/dev/virtualenvs/
+
+The virtualenvs command is available to you using your jailshell/SSH connection to the account. If you have any other questions or concerns, please inform us so that we can help you to achieve your hosting goals.
+
+iphsd@iphsd.org [~]# python2.7      
+Python 2.7.3 (default, Dec 11 2012, 20:12:43) 
+[GCC 4.4.6 20120305 (Red Hat 4.4.6-4)] on linux2
+Type "help", "copyright", "credits" or "license" for more information.
+>>> import django
+>>> print(django.getversion())
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+AttributeError: 'module' object has no attribute 'getversion'
+>>> print(django.get_version())

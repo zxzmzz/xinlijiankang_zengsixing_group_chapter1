@@ -2,3 +2,6 @@ memo 2014 11 18
 注册 github 账号 ，把 Publickey 和用户名给我
 我给你 国外服务器 账号， 你尝试在上面 把项目跑起来。 服务器是linux 系统。
 https://github.com/zha8035/xinlijiankang_zengsixing_group_chapter1.git
+
+服务器是linux
+192.185.2.37   dewei   abcd1234!UESTC

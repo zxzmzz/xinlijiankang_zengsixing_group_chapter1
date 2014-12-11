@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>问卷 - {{ qn.name }}</title>
+</head>
+<body>
+<h1>{{ qn.title }}</h1>
+<h2>{{ qn.description }}</h2>
+<form action="/q/{{ qn.id }}/" method="post">
+    {% for question in qn.questions.all %}
+        <fieldset>
+            <h3 style="font-weight: bold">{{ forloop.counter }}  {{ question.content }}</h3><br>
+                {% for opt in question.anwers.all %}
+                    <label >{{ opt.content }}</label><input type="radio" name="{{ question.id }}" value="{{ opt.id }}"><br>
+                {% endfor %}
+            </select>
+        </fieldset>
+    {% endfor %}
+    <button type="submit">提交答案并获取得分</button>
+
+
+</form>
+
+</body>
+</html>

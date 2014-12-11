@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>问卷集合页面</title>
+</head>
+<body>
+<h1>以下是目前所有的问卷</h1>
+{% for qn in qns %}
+<fieldset>
+    <a href="/q/{{ qn.id }}/"><h3>{{ qn.title }}</h3></a>
+    <p style="font-size: 15px;">简介：{{ qn.description }}</p>
+</fieldset>
+{% endfor %}
+
+</body>
+</html>
